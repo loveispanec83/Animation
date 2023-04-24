@@ -15,8 +15,10 @@ body {
   background: #191c29;
 }
 .card {
-  width: var(--card-width);
-  height: var(--card-height);
+    width: 300px;
+    height: 400px;
+  /* width: var(--card-width);
+  height: var(--card-height); */
   position: relative;
   display: flex;
   justify-content: center;
@@ -27,15 +29,18 @@ body {
 }
 
 .cover-image {
-  width: 100%;
-  height: 100%;
+    width: 320px;
+    height: 500px;
+  /* width: 100%;
+  height: 100%; */
   object-fit: cover;
 }
 
 .wrapper {
+ width: 300px;
   transition: all 0.5s;
   position: absolute;
-  width: 100%;
+  /* width: 100%; */
   z-index: -1;
 }
 
@@ -50,7 +55,7 @@ body {
 .wrapper::after {
   content: "";
   opacity: 0;
-  width: 100%;
+  width: 320px;
   height: 80px;
   transition: all 0.5s;
   position: absolute;
@@ -97,17 +102,20 @@ body {
   height: 70px;
 }
 
+
 .character {
-  width: 100%;
+  width: 245%;
+  height: 135%;
   opacity: 0;
   transition: all 0.5s;
   position: absolute;
   z-index: -1;
+  margin-bottom: -30px;
 }
 
 .card:hover .character {
   opacity: 1;
-  transform: translate3d(0%, -30%, 100px);
+  transform: translate3d(5%, -10%, 100px);
 }
 
 
